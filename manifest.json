@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "CircleCI Link Changer",
+  "description": "Go from a GitHub page to the CircleCI workflows page for the repository",
+  "version": "1.0.0",
+  "homepage_url": "https://www.siddharthkannan.in",
+
+  "icons": {
+    "60": "icons/cutouts-60.png",
+    "40": "icons/cutouts-40.png"
+  },
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "page_action": {
+    "default_icon": "icons/cutouts-40.png",
+    "browser_style": true
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}
