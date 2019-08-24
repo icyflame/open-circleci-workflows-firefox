@@ -1,4 +1,4 @@
-# Redirect to CircleCI - Firefox extension
+# Open CircleCI Workflows - Firefox extension
 
 > Switch from any GitHub repository to it's CircleCI workflows page
 
