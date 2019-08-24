@@ -6,8 +6,8 @@
   "homepage_url": "https://www.siddharthkannan.in",
 
   "icons": {
-    "60": "icons/cutouts-60.png",
-    "40": "icons/cutouts-40.png"
+    "60": "icons/open-circleci-workflows-60.png",
+    "40": "icons/open-circleci-workflows-40.png"
   },
 
   "background": {
@@ -17,7 +17,7 @@
   },
 
   "page_action": {
-    "default_icon": "icons/cutouts-40.png",
+    "default_icon": "icons/open-circleci-workflows-60.png",
     "browser_style": true
   },
 
