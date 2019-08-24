@@ -11,8 +11,8 @@ function showPageAction (tab, newURL) {
   const title = defaultPageActionTitle + ' => ' + newURL;
   const tabId = tab.id;
 
-  browser.pageAction.setTitle({ tabId, title });
-  browser.pageAction.show(tabId);
+  chrome.pageAction.setTitle({ tabId, title });
+  chrome.pageAction.show(tabId);
 }
 
 function showPageActionIfEligible (tab) {
@@ -40,10 +40,10 @@ function getWorkflowsURL (tab) {
   return '';
 }
 
-browser.pageAction.onClicked.addListener((tab) => {
+chrome.pageAction.onClicked.addListener((tab) => {
   const newURL = getWorkflowsURL(tab);
   if (newURL !== '') {
-    browser.tabs.update({
+    chrome.tabs.update({
       url: newURL
     });
   }
@@ -51,6 +51,6 @@ browser.pageAction.onClicked.addListener((tab) => {
 
 // Whenever a tab updates, check if it is eligible for this page action. If yes, show the page
 // action.
-browser.tabs.onUpdated.addListener((tabID, changeInfo, tab) => {
+chrome.tabs.onUpdated.addListener((tabID, changeInfo, tab) => {
   showPageActionIfEligible(tab);
 });
