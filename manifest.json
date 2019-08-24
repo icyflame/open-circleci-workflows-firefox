@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "CircleCI Link Changer",
+  "name": "Open CircleCI Workflows",
   "description": "Go from a GitHub page to the CircleCI workflows page for the repository",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage_url": "https://www.siddharthkannan.in",
 
   "icons": {
