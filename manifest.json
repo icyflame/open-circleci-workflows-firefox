@@ -21,6 +21,14 @@
     "browser_style": true
   },
 
+  "commands": {
+    "_execute_page_action": {
+      "suggested_key": {
+        "default": "Alt+I"
+      }
+    }
+  },
+
   "permissions": [
     "activeTab",
     "tabs"
